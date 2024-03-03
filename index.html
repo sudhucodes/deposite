@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Page</title>
+    <script src="https://kit.fontawesome.com/c58add7555.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="deposite.css">
+</head>
+<body>
+    <div id="overlay"></div>
+    <main>
+    <header>
+        <h1>Deposit Page</h1>
+    </header>
+
+    
+        <div class="deposit-form">
+            <label>Choose Amount:</label>
+            <div class="amount-options">
+                <input type="radio" id="amount50" name="amount" value="50">
+                <label for="amount50">₹50</label>
+    
+                <input type="radio" id="amount100" name="amount" value="100">
+                <label for="amount100">₹100</label>
+    
+                <input type="radio" id="amount500" name="amount" value="500">
+                <label for="amount500">₹500</label>
+    
+                <input type="radio" id="amount1000" name="amount" value="1000">
+                <label for="amount1000">₹1,000</label>
+
+                <input type="radio" id="amount10000" name="amount" value="10000">
+                <label for="amount10000">₹10,000</label>
+
+                <input type="radio" id="amount50000" name="amount" value="50000">
+                <label for="amount50000">₹50,000</label>
+
+                <input type="radio" id="amount100000" name="amount" value="100000">
+                <label for="amount100000">₹1,00,000</label>
+            </div>
+            <input type="text" id="customAmount" name="amount" placeholder="Custom Amount">
+            <p id="error-message" class="error-message"></p>
+            <button id="depositButton">Deposit Now</button>
+        </div>
+
+
+    <div class="rechargeinsuction">
+        <h3><i class="fa-solid fa-book"></i> Recharge instruction</h3>
+        <div class="recharge-instructions">
+            <p2 class="instruction-paragraph">
+                <span class="bullet">◆</span> If the transfer time is up, please fill out the deposit form again.<br>
+                <span class="bullet">◆</span> The <span class="important-text">transfer amount</span> must match the order you created, otherwise the money cannot be credited successfully.<br>
+                <span class="bullet">◆</span> If you transfer the wrong <span class="important-text">amount</span>, our company will not be responsible for the lost <span class="important-text">amount</span>!<br>
+                <span class="bullet">◆</span> <strong>Note:</strong> Do not cancel the deposit order after the money has been transferred.
+            </p2>
+        </div>
+        
+        
+    </div>
+</main>
+            <!-- deposite details -->
+        <div class="modal" id="upiModal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h2>Deposit Details</h2>
+                <p>Amount : <strong><span id="selectedAmount"></span></strong></p>
+                <p1>UPI ID:<span id="upiId">9122495060@ypl</span> <button class="upibtn" onclick="copyUPI()">Copy</button></p1>
+            <div class="upi-apps">
+                <div class="headf">
+                    <p class="supportedupiapps">Supported UPI Apps:</p>
+                </div>
+                <div class="headf">
+                    <div class="upi-app" onclick="selectUPI('PhonePe')"> <!-- Replace 'PhonePe' with the actual UPI app name -->
+                        <p>PhonePe</p>
+                    </div>
+                    <div class="upi-app" onclick="selectUPI('Google Pay')"> <!-- Replace 'Google Pay' with the actual UPI app name -->
+                        <p>GPay</p>
+                    </div>
+                    <div class="upi-app" onclick="selectUPI('Google Pay')"> <!-- Replace 'Google Pay' with the actual UPI app name -->
+                        <p>Paytm</p>
+                    </div>
+                </div>
+                <!-- Add more divs for other UPI apps as needed -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="foterdiv">
+        <p11 class="fotter">&copy; 2024 Color Prediction Game. All rights reserved.</p11>
+</div>
+
+
+    <script src="deposite.js"></script>
+</body>
+</html>

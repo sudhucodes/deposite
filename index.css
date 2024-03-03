@@ -1,0 +1,293 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7ff;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+main{
+    max-width: 390px;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    margin-bottom: 10px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+
+
+.deposit-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.foterdiv{
+    margin-left: 0px;
+    width: 390px;
+    height: 50px;
+    background-color: #333;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.fotter{
+    color: white;
+}
+
+/* Add any additional styling as needed */
+/* Existing styles remain unchanged */
+.deposit-form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.deposit-form label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.amount-options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.amount-options input {
+    display: none;
+}
+
+.amount-options label {
+    flex: 1;
+    margin: 5px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.amount-options input:checked + label {
+    background-color: #4285f4;
+    color: white;
+}
+
+.amount-options label:hover {
+    background-color: #4285f4;
+    color: white;
+}
+
+button#depositButton {
+    margin-top: 5px;
+    padding: 12px 24px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button#depositButton:hover {
+    background-color: #3166c4;
+}
+/* Add this style to hide the deposit details initially */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.modal-content {
+    text-align: center;
+    display: grid;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+}
+
+h2 {
+    color: #4285f4;
+}
+
+p {
+    margin: 10px 0;
+}
+
+strong {
+    color: #218c55;
+}
+
+.upi-apps {
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+}
+
+.upi-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    padding: 10px;
+    margin: 5px;
+    background: linear-gradient(to bottom, #4CAF50, #45a049);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.upi-app:hover {
+    background: linear-gradient(to bottom, #45a049, #4CAF50); /* Adjusted gradient on hover for an interactive effect */
+}
+
+.error-message{
+    font-weight: bold;
+}
+#customAmount {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+.upibtn{
+    height: 30px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content p1{
+    width: 240px;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    align-items: center;
+    color: #000000; /* Your desired text color */
+    background-color: #f0f0f0; /* Your desired background color */
+    padding: 5px;
+    border-radius: 5px;
+}
+#upiId {
+    font-size: 15px;
+    font-weight: bold;
+    color: #218c55; /* Your desired text color */
+    background-color: #f0f0f0; /* Your desired background color */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.supportedupiapps{
+    font-weight: bold;
+}
+.rechargeinsuction {
+    padding: 20px;
+    display: grid;
+    margin: 20px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rechargeinsuction h3 {
+    color: #3166c4; 
+}
+
+.recharge-instructions {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.bullet {
+    display: inline-block;
+    width: 1em;
+    margin-left: -30px;
+    margin-right: 8px;
+    color: #3166c4;
+}
+
+p2 {
+    margin-left: 1.5em; /* Adjust the indentation as needed */
+}
+.important-text {
+    color: #10a3f1; /* Change this to the color you prefer for emphasized text */
+}
+.instruction-paragraph {
+    color: #555; /* Change this to the color you prefer for the paragraph text */
+}
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 1; /* Make sure the overlay is on top of other elements */
+}
